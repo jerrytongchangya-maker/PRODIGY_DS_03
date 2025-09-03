@@ -1,0 +1,41 @@
+# PRODIGY_DS_03 - Decision Tree Classifier (Bank Marketing Dataset)
+
+## 📌 Task Objective
+
+Build a *Decision Tree Classifier* to predict whether a customer will purchase a product or service based on their *demographic and behavioral data*.
+
+## 🗂 Dataset Used
+
+•⁠  ⁠*Dataset Name:* Bank Marketing Dataset  
+•⁠  ⁠*Source:* UCI Machine Learning Repository  
+•⁠  ⁠*File Used:* ⁠ bank.csv ⁠  
+•⁠  ⁠*Target Variable:* ⁠ y ⁠ (whether a client has subscribed to a term deposit)  
+•⁠  ⁠*Features include:*  
+  - Age, job, marital status, education, contact method  
+  - Number of calls, campaign outcomes  
+  - Day, month, and more...
+
+## 🔍 Steps Followed
+
+1.⁠ ⁠*Data Loading and Inspection*
+   - Loaded dataset using pandas
+   - Checked structure and missing values
+
+2.⁠ ⁠*Data Preprocessing*
+   - Converted target variable (⁠ y ⁠) from ⁠ yes/no ⁠ to ⁠ 1/0 ⁠
+   - One-hot encoded categorical features using ⁠ pd.get_dummies() ⁠
+
+3.⁠ ⁠*Train/Test Split*
+   - Split the dataset into training (70%) and testing (30%)
+
+4.⁠ ⁠*Model Training*
+   - Used ⁠ DecisionTreeClassifier ⁠ from ⁠ sklearn ⁠
+   - Trained the model on the training data
+
+5.⁠ ⁠*Model Evaluation*
+   - Evaluated using:
+     - Accuracy Score
+     - Confusion Matrix
+     - Classification Report
+
+6.⁠ ⁠*(Optional) Tree Visua*
